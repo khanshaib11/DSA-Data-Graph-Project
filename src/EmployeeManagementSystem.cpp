@@ -13,6 +13,17 @@ EmployeeManagementSystem::EmployeeManagementSystem()
     numEmployees = 0;
 }
 
+EmployeeManagementSystem::~EmployeeManagementSystem()
+{
+    for (int i = 0; i < MAX_EMPLOYEES; i++)
+    {
+        if (employees[i] != nullptr)
+        {
+            delete employees[i];
+        }
+    }
+}
+
 void EmployeeManagementSystem::addEmployee(Employee *employee)
 {
     if (numEmployees < MAX_EMPLOYEES)

@@ -41,6 +41,7 @@ private:
 
 public:
     EmployeeManagementSystem();
+    ~EmployeeManagementSystem();
     
     void addEmployee(Employee *employee);
     

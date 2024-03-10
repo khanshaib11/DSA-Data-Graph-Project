@@ -3,7 +3,7 @@ CXXFLAGS := -std=c++23 -Wall -Werror -Wextra -pedantic -O3 -march=native
 
 TARGET := main
 
-SRC := src/main.cpp src/EmployeeManagementSystem.cpp
+SRC := src/main.cpp src/EmployeeManagementSystem.cpp src/utils.cpp
 OBJ := $(SRC:.cpp=.o)
 
 $(TARGET): $(OBJ)
